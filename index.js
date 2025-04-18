@@ -1,8 +1,11 @@
 const boxes = document.querySelectorAll(".boxes");
 const msg = document.querySelector(".msg");
+const resetBtn = document.querySelector(".reset-btn");
 let turnX = true;
 let winnerFound = false;
-let checkedBoxesCount = 0;
+let checkedBoxesCount = 0; //For checking whether all the 9 boxes are checked
+
+//Winning patterns
 let winPatterns = 
     [
         [0,1,2],
@@ -15,6 +18,7 @@ let winPatterns =
         [2,5,8]
     ]
 
+//Event listener for boxes
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (turnX) {
@@ -58,7 +62,19 @@ function checkWinner(winner) {
 
 //Function for checking a draw
 function checkDraw() {
-    if (checkedBoxesCount === 9 && !winnerFound) {
+    if (checkedBoxesCount === 9 && !winnerFound) { // Condition checks boxes checked & winner
         msg.innerText = "Game Drawn!";
     }
 }
+
+//Event listener for reset button to reset the game
+resetBtn.addEventListener("click", () => {
+    turnX = true;
+    winnerFound = false;
+    checkedBoxesCount = 0;
+    boxes.forEach((box) => {
+        box.innerText = null;
+        box.disabled = false;
+    })
+    msg.innerText = "Move of player X";
+})
