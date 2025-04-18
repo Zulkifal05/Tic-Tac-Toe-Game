@@ -30,7 +30,6 @@ body {
     color: #ffdbac;
     padding: 1%;
     border-radius: 12px;
-<<<<<<< HEAD
 }
 
 .animation {
@@ -44,9 +43,6 @@ body {
     to {
         opacity: 100;
     }
-=======
-    display: none;
->>>>>>> 6a2286864dc684459ccab7e835d03184cc53dc80
 }
 
 .container {
@@ -69,14 +65,9 @@ body {
     margin: 2%;
     border-radius: 12px;
     cursor: pointer;
-<<<<<<< HEAD
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.9rem;
     color: brown;
-=======
->>>>>>> 6a2286864dc684459ccab7e835d03184cc53dc80
+    font-size: 2.1rem;
+    font-weight: bolder;
 }
 
 .reset-btn-div {
