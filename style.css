@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main-head-div {
+    background-color: palevioletred;
+    color: #ffdbac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.msg-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.msg {
+    background-color: palevioletred;
+    color: #ffdbac;
+    padding: 1%;
+    border-radius: 12px;
+}
+
+.animation {
+    animation: message 1s ease-in  1;
+}
+
+@keyframes message {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.main-game-div {
+    height: 50vmin;
+    width: 55vmin;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.boxes {
+    height: 15vmin;
+    width: 15vmin;
+    background-color: #ffdbac;
+    margin: 2%;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    color: brown;
+}
+
+.reset-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.reset-btn {
+    padding: 1%;
+    color: #ffdbac;
+    background-color: palevioletred;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bolder;
+}
